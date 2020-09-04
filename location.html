@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background-color: #fff;
+            margin:100px auto;
+        }
+        .prev {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .prev,.next {
+             position: absolute;
+             top:50%;
+            margin-top: -15px;
+            width:20px;
+            height: 30px;
+            background: rgba(0,0,0,.3);
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .promo-nav {
+            position: absolute;
+            bottom: 15px;
+            left:50%;
+            margin-left:-35px ;
+            width: 70px;
+            height: 13px;
+            background:rgba(255,255,255,.3);
+            border-radius: 7px;
+        }
+        .promo-nav li {
+            float: left ;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            list-style: none;
+            border-radius: 4px;
+            margin: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="tb-promo">
+        <img src="image/tb.jpg" alt="">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <ul class="promo-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
